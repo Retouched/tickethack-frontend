@@ -1,0 +1,62 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+  }
+  
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    background-image: url("./images/background.jpg");
+    background-size: cover;  
+}
+  #navbar {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:white;
+    justify-content: start;
+  }
+#header{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#searchCard{
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 6;
+    background-color: #ffffff;
+    border-radius: 10px;
+
+}
+#resultCard{
+    grid-row-start: 4;
+    grid-row-end: 10;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+#logoContainer{
+    display:flex;
+    align-content: start;
+    margin-left: 5px;
+    color: #50A990;
+    font-weight: bolder;
+}
+#navButtons{
+    margin-left: auto;
+    margin-right: 5px;
+}
