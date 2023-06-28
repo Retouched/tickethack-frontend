@@ -29,6 +29,7 @@ body {
     grid-column-start: 1;
     grid-column-end: 13;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
@@ -39,7 +40,9 @@ body {
     grid-column-end: 6;
     background-color: #ffffff;
     border-radius: 10px;
-
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 #resultCard{
     grid-row-start: 4;
@@ -48,6 +51,10 @@ body {
     grid-column-end: 11;
     background-color: #ffffff;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    
 }
 #logoContainer{
     display:flex;
@@ -59,4 +66,80 @@ body {
 #navButtons{
     margin-left: auto;
     margin-right: 5px;
+}
+#searchButton{
+    margin-top: auto;
+    background-color: #50A990;
+}
+#date{
+    margin-top: 20%;
+}
+.tripCard{
+    display: flex;
+    flex-direction: row;
+    background-color: #f7f1f1;
+    justify-content: space-around;
+    padding: 10px;
+}
+#addToCart{
+    background-color:#50A990 ;
+}
+#defaultResult{
+    display:none;
+    flex-direction: column;
+}
+#noResult{
+    display:none;
+    flex-direction: column;
+}
+#tripResult{
+    display: flex;
+    flex-direction: column;
+}
+#trainImg{
+    height: 50%;
+    width:50%;
+    align-self: center;
+}
+#defaultMessage{
+    align-self: center;
+}
+#notFoundImg{
+    height: 50%;
+    width:50%;
+    align-self: center;
+}
+#notFoundMessage{
+    align-self: center;
+
+}
+#containerCities{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin:0 20%;
+}
+#departureSearched{
+    align-self: center;
+}
+#arrivalSearched{
+    align-self: center;
+}
+#departureHour{
+    align-self:center;
+    margin:0 20%;
+
+}
+#tripPrice{
+    align-self: center;
+    margin:0 20%;
+
+}
+h1{
+    color:white;
+
+}
+h2{
+
+    color:white;
 }
