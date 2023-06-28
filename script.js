@@ -20,7 +20,7 @@ document.querySelector('#searchButton').addEventListener('click', function (){
                         <div id="arrivalSearched">${arrival}</div>
                     </div>
                     <div id="departureHour">${departureHour}</div>
-                    <div id="tripPrice">${price}</div>
+                    <div id="tripPrice">${price}€</div>
                     <button id="addToCart">Book</button>
                 </div>
             `
