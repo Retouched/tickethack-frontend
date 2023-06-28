@@ -11,8 +11,8 @@ document.querySelector('#searchButton').addEventListener('click', function (){
             let arrival = data.allTripsFounded[i].arrival;
             let departureHour = data.allTripsFounded[i].date;
             let price = data.allTripsFounded[i].price;
-
-            document.querySelector('#tripResult').innerHTML += `
+            let addedTrip = 
+            `
             <div class="tripCard">
                     <div id="containerCities">
                         <div id="departureSearched">${departure}</div>
@@ -24,8 +24,17 @@ document.querySelector('#searchButton').addEventListener('click', function (){
                     <button id="addToCart">Book</button>
                 </div>
             `
+
+            document.querySelector('#tripResult').innerHTML += addedTrip
         }
-        // INSERER UNE FONCTION POUR SUPPRIMER LES RESULTATS POUR LES PROCHAINES RECHERCHES
+        
+        document.querySelector('#addToCart').addEventListener('click',
+            function addMessage () {
+                document.querySelector('.cart').innerHTML += addedTrip
+            }
+        )
+
     })
-    
+    // INSERER UNE FONCTION POUR SUPPRIMER LES RESULTATS POUR LES PROCHAINES RECHERCHES
     })
+
